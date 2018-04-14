@@ -42,6 +42,6 @@ The codes are tested using MATLAB R2014a
 
 ## Authors
 
-* **Mohamed Wahballah** - *Initial work* - [mawahballah](https://github.com/mawahballah)
+* **Mohamed Wahballah**  - [mawahballah](https://github.com/mawahballah)
 
-* **Valentin Golodov** - *Initial work* - [valentingolodov](https://github.com/valentingolodov)
+* **Valentin Golodov** - [valentingolodov](https://github.com/valentingolodov)
