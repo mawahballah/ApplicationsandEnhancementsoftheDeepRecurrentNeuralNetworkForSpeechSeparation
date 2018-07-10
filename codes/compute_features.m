@@ -47,8 +47,8 @@ function [DATA, mixture_spectrum, eI] = compute_features(dmix, eI)
       %add your own path here
        eICFGPath='C:\Users\mabde\Downloads\ApplicationsandEnhancementsoftheDeepRecurrentNeuralNetworkForSpeechSeparation-master\ApplicationsandEnhancementsoftheDeepRecurrentNeuralNetworkForSpeechSeparation-master\tools\htk_features\';
        command=sprintf('HCopy -A -C %s%s %s%s %s%s',...
-            eICFGPath,eI.config,eIsaveDir,'dmix_temp.wav',...
-            eIsaveDir, 'train.fea');
+            eICFGPath,eI.config,eI.saveDir,'dmix_temp.wav',...
+            eI.saveDir, 'train.fea');
 
         system(command);        
         [ DATA, HTKCode ] = htkread( [eI.saveDir,'train.fea'] );
