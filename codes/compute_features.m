@@ -44,10 +44,10 @@ function [DATA, mixture_spectrum, eI] = compute_features(dmix, eI)
                 eI.config='spectrum_32ms_step16ms.cfg';
             end
         end
-       eICFGPath = 'F:\Thesis\deeplearningsourceseparation-master\deeplearningsourceseparation-master\tools\htk_features\fbank_64ms_step32ms.cfg';       
-       eIsaveDir='F:\Thesis\deeplearningsourceseparation-master\deeplearningsourceseparation-master\codes\TSP\discrim_joint_offset_all_results\';       
-       command=sprintf('HCopy -A -C %s %s%s %s%s',...
-            eICFGPath,eIsaveDir,'dmix_temp.wav',...
+      %add your own path here
+       eICFGPath='C:\Users\mabde\Downloads\ApplicationsandEnhancementsoftheDeepRecurrentNeuralNetworkForSpeechSeparation-master\ApplicationsandEnhancementsoftheDeepRecurrentNeuralNetworkForSpeechSeparation-master\tools\htk_features\';
+       command=sprintf('HCopy -A -C %s%s %s%s %s%s',...
+            eICFGPath,eI.config,eIsaveDir,'dmix_temp.wav',...
             eIsaveDir, 'train.fea');
 
         system(command);        
