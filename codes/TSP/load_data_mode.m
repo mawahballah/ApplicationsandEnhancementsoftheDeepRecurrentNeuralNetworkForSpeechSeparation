@@ -11,16 +11,16 @@ function [mixture, signal_1, signal_2]=load_data_mode(speaker_setting, data_mode
 % mode -- 0: training, 1: valid, 2: testing
 
 % pick up the TSP speakers: TSP speaker IDs used
-% FA vs FB (female vs female)
-% MC vs MD (male vs male)
-% FA vs MC (male vs female)
+% F1 vs F2 (female vs female)
+% M1 vs M2 (male vs male)
+% F1 vs M1 (male vs female)
  
 if speaker_setting==0, 
-    s1id='F'; s2id='M'; %tony repalced MC and F replaced FA
+    s1id='F1'; s2id='M1'; 
 elseif speaker_setting==1, 
-    s1id='F'; s2id='FB'; %F repalce FA
+    s1id='F1'; s2id='F2'; 
 elseif speaker_setting==2,
-    s1id='M'; s2id='MD'; %tony replaced MC 
+    s1id='M1'; s2id='M2'; 
 else
    fprintf('invalid data_mode');
 end
